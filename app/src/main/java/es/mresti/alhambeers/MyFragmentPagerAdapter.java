@@ -59,12 +59,7 @@ public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
     @Override
     public CharSequence getPageTitle(int position) {
         String title = "";
-       /* switch (position){
-            case 0: title= context.getResources().getString(R.string.status_watching); ;break;
-            case 1: title= context.getResources().getString(R.string.status_complete); ;break;
-            case 2: title= context.getResources().getString(R.string.status_pending); ;break;
-            case 3: title= context.getResources().getString(R.string.status_abandoned); ;break;
-        }*/
+
         return title;
     }
 }

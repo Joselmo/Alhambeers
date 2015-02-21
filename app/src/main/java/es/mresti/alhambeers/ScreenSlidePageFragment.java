@@ -8,6 +8,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.gc.materialdesign.views.ButtonFlat;
+
 
 /**
  * Controla el contenido de cada pagina
@@ -74,20 +76,33 @@ public class ScreenSlidePageFragment extends Fragment {
         ViewGroup rootView = (ViewGroup) inflater.inflate(
                 R.layout.fragment_info_zona, container, false);
 
-        // Vinculamos el TextView con la variable
+        // Vinculamos el TextView y Boton con la variable
         TextView tvIndex = (TextView) rootView.findViewById(R.id.tvIndice);
+        ButtonFlat boton = (ButtonFlat) rootView.findViewById(R.id.btn_siguiente);
 
+        boton.setVisibility(View.GONE);
         //Asignamos el texto que corresponda a las instrucciones
         tvIndex.setText(String.valueOf(this.index));
         switch (this.index){
             case 1: tvIndex.setText(getResources().getString(R.string.info_paso1));;break;
             case 2: tvIndex.setText(getResources().getString(R.string.info_paso2));;break;
             case 3: tvIndex.setText(getResources().getString(R.string.info_paso3));;break;
-            case 4: tvIndex.setText(getResources().getString(R.string.info_paso4));;break;
+            case 4: ultimoPaso(tvIndex,boton);;break;
 
         }
 
         return rootView;
+
+    }
+
+
+    /** Activa las opciones del ultimo paso.
+     *
+     * @param texto TextView del fragment
+     */
+    private void ultimoPaso(TextView texto, ButtonFlat boton){
+        texto.setText(getResources().getString(R.string.info_paso4));
+        boton.setVisibility(View.VISIBLE);
 
     }
 
