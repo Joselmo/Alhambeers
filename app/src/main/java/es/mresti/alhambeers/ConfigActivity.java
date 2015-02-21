@@ -21,4 +21,8 @@ public class ConfigActivity extends Activity {
         Intent i = new Intent(this,SelecTelfActivity.class);
         startActivity(i);
     }
+    public void btnSelecTwitter (View v){
+        Intent i = new Intent(this,SelecTwitterActivity.class);
+        startActivity(i);
+    }
 }
