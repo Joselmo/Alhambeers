@@ -27,4 +27,8 @@
     <CheckBoxPreference android:title="cbZona"
         android:key="cbZona"
         android:defaultValue="false"/>
+
+    <CheckBoxPreference android:title="cbBloqueo"
+                        android:key="cbBloqueo"
+                        android:defaultValue="false"/>
 </PreferenceScreen>

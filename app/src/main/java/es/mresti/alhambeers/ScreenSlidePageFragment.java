@@ -16,8 +16,6 @@ import com.gc.materialdesign.views.ButtonFlat;
  */
 public class ScreenSlidePageFragment extends Fragment {
 
-
-
     private static final String BACKGROUND_COLOR = "color";
 
     /**
@@ -52,8 +50,6 @@ public class ScreenSlidePageFragment extends Fragment {
     public ScreenSlidePageFragment() {
         // Required empty public constructor
     }
-
-
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
