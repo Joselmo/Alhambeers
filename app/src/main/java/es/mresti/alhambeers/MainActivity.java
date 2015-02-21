@@ -1,13 +1,12 @@
 package es.mresti.alhambeers;
 
-
-import android.support.v7.app.ActionBarActivity;
-import android.os.Bundle;
+import android.app.Activity;
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.View;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity {
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -17,9 +16,27 @@ public class MainActivity extends ActionBarActivity {
 
   }
 
-    public void btnConfig (View v){
+    /** Botones de inicio
+     *
+     *
+     */
+   public void btnConfig (View v){
         Intent i = new Intent(this,ConfigActivity.class);
         startActivity(i);
     }
 
+    public void btnSos (View v){
+        Intent i = new Intent(this,ConfigActivity.class);
+        startActivity(i);
+    }
+
+    public void btnTwitter (View v){
+        Intent i = new Intent(this,ConfigActivity.class);
+        startActivity(i);
+    }
+
+    public void btnTelefono (View v){
+        Intent i = new Intent(this,ConfigActivity.class);
+        startActivity(i);
+    }
 }

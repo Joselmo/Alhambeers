@@ -20,14 +20,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/red_500"
-            android:text="@string/btn_sos" />
+            android:text="@string/btn_sos"
+            android:onClick="btnSos" />
 
         <com.gc.materialdesign.views.ButtonRectangle
             android:id="@+id/btn_twitter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/blue_500"
-            android:text="@string/btn_twitter" />
+            android:text="@string/btn_twitter"
+            android:onClick="btnTwitter" />
 
         </LinearLayout>
 
@@ -41,13 +43,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/lime_500"
-            android:text="@string/btn_phone" />
+            android:text="@string/btn_phone"
+            android:onClick="btnTelefono" />
+
         <com.gc.materialdesign.views.ButtonRectangle
             android:id="@+id/btn_config"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/grey_500"
-            android:text="@string/btn_settings" />
+            android:text="@string/btn_settings"
+            android:onClick="btnConfig" />
         </LinearLayout>
 
 </LinearLayout>
