@@ -27,6 +27,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/lime_500"
-        android:text="@string/btn_phone" />
+        android:text="@string/btn_phone"
+        android:onClick="btnSelecTelf" />
 
 </LinearLayout>
