@@ -12,6 +12,11 @@
     <string name="et_telf">Introduzca Teléfono de Contacto</string>
     <string name="aceptar">Aceptar</string>
     <string name="cancelar">Cancelar</string>
+    <string name="btn_low">menos</string>
+    <string name="btn_high">mas</string>
+    <string name="btn_ok">OK</string>
+    <string name="text_meters">metros</string>
+    <string name="text_dist">XXX</string>
 
     <string name="info_paso1">Paso 1</string>
     <string name="info_paso2">Paso 2</string>
