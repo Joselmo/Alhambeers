@@ -14,4 +14,9 @@
     <string name="et_telf">Introduzca Teléfono de Contacto</string>
     <string name="aceptar">Aceptar</string>
     <string name="cancelar">Cancelar</string>
+
+    <string name="info_paso1">Paso 1</string>
+    <string name="info_paso2">Paso 2</string>
+    <string name="info_paso3">Paso 3</string>
+    <string name="info_paso4">Paso 4</string>
 </resources>
