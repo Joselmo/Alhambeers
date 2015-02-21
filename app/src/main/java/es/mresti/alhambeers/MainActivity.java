@@ -1,7 +1,7 @@
-package es.mresti.alhambeers;
 
 import android.support.v7.app.ActionBarActivity;
-import android.os.Bundle;
+import android.os.Bundle;package es.mresti.alhambeers;
+
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -37,4 +37,4 @@ public class MainActivity extends ActionBarActivity {
     return super.onOptionsItemSelected(item);
   }
 }
-// Prueba de github
+// Prueba de github kieeee
