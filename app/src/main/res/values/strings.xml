@@ -10,4 +10,5 @@
     <string name="btn_sos">SOS</string>
     <string name="btn_phone">Telefono</string>
     <string name="btn_zone">Zona</string>
+    <string name="btn_back">Atras</string>
 </resources>
