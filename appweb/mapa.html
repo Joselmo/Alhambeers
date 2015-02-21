@@ -17,7 +17,15 @@
 					<a href="logout.html" class="btn btn-danger btn-lg">Desconectar</a>
 			</div>
 		</nav>
-		
+		<script>
+		function localizame() {
+     		       if (navigator.geolocation) {
+       		         navigator.geolocation.getCurrentPosition(coordenadas);
+     	 	      }else{
+     	 	          alert('Oops! Tu navegador no soporta geolocalización. Bájate Chrome, que es gratis!');
+      	      }
+		}
+	<	/script>
 
 
 	</body>
