@@ -4,12 +4,11 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
-/**
- * Created by asus on 21/02/2015.
- */
 public class SelecTelfActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,19 +19,14 @@ public class SelecTelfActivity extends Activity {
     public void aniadirTelf (View v) {
 
         EditText etTelf = (EditText) findViewById(R.id.etTelefono);
-
-        SharedPreferences prefs =
-                getSharedPreferences("preferencias", Context.MODE_PRIVATE);
+        SharedPreferences prefs = getSharedPreferences("preferencias", Context.MODE_PRIVATE);
 
         SharedPreferences.Editor editor = prefs.edit();
         editor.putString("tlf", etTelf.getText().toString());
+        editor.putBoolean("cbTelf",true);
         editor.commit();
 
 
-        SharedPreferences pref =
-                PreferenceManager.getDefaultSharedPreferences(
-                        AndroidPrefScreensActivity.this);
-
-        Log.i("", "Opción 1: " + pref.getString("tlf"));
+        Toast.makeText(this,getResources().getString(R.string.save),Toast.LENGTH_SHORT).show();
     }
 }

@@ -25,4 +25,5 @@
     <string name="info_paso4">Paso 4</string>
     <string name="bloquear">Bloquear</string>
     <string name="desbloquear">Desbloquear</string>
+    <string name="save">Guardado</string>
 </resources>
