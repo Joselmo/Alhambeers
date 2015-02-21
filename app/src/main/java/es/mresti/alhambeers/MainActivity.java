@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.net.Uri;
 
 
 public class MainActivity extends Activity {
@@ -36,7 +37,8 @@ public class MainActivity extends Activity {
     }
 
     public void btnTelefono (View v){
-        Intent i = new Intent(this,ConfigActivity.class);
-        startActivity(i);
+        Intent intent = new Intent(Intent.ACTION_CALL,
+                Uri.parse("tel:686972826"));
+        startActivity(intent);
     }
 }

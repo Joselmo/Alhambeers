@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.View;
+import android.widget.Toast;
 
 import com.gc.materialdesign.views.ButtonRectangle;
 
@@ -38,7 +39,7 @@ public class ConfigActivity extends Activity {
         ButtonRectangle bloquear = (ButtonRectangle) findViewById(R.id.btn_bloquear);
 
         //Asignamos el texto que corresponda a las instrucciones
-        if (bloquear.getText().equals(R.string.bloquear)) {
+        if (bloquear.getText().equals(getResources().getString(R.string.bloquear))) {
             bloquear.setText(getResources().getString(R.string.desbloquear));
         }
         else{
