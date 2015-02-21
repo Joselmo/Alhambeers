@@ -12,21 +12,21 @@
             android:id="@+id/btn_zona"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#1E88E5"
-            android:text="Button" />
+            android:background="@color/red_500"
+            android:text="@string/btn_zone" />
         <com.gc.materialdesign.views.ButtonRectangle
             android:id="@+id/btn_twitter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#1E88E5"
-            android:text="Button" />
+            android:background="@color/blue_500"
+            android:text="@string/btn_twitter" />
     </LinearLayout>
 
     <com.gc.materialdesign.views.ButtonRectangle
         android:id="@+id/btn_tlf"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#1E88E5"
-        android:text="Button" />
+        android:background="@color/lime_500"
+        android:text="@string/btn_phone" />
 
 </LinearLayout>
