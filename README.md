@@ -58,8 +58,8 @@ Control de zona segura, localización y un aviso de socorro fueron los principal
 
 ##API's y recursos
 
-Para realizar el proyecto usaremos android 4.4.2, API 19 de GOOGLE. Un frame responsive, usando material design del nuevo android 5.0.
-Potenciaremos en todo conseguir una experiencia rica para el usuario, ya que al ser una pantalla pequeña la configuración tediosa puede llevar al usuario a errores y a desechar la aplicación.
+Para realizar el proyecto usaremos Android 4.4.2, API 19 de Google. Un frame responsive, usando Material Design del nuevo Android 5.0.
+Potenciaremos, en todo momento, la experiencia de usuario (UX) y una interfaz (UI) fácil e intuitiva, ya que al ser una pantalla pequeña la configuración tediosa puede llevar al usuario a errores y a desechar la aplicación.
 
 
 ##Mejoras
