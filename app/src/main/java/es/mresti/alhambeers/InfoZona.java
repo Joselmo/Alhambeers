@@ -1,5 +1,6 @@
 package es.mresti.alhambeers;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
@@ -51,6 +52,8 @@ public class InfoZona extends FragmentActivity  {
 
     public void btnSiguiente (View v){
         Toast.makeText(this,"Siguiente",Toast.LENGTH_SHORT).show();
+        Intent i = new Intent(this,InfoZona.class);
+        startActivity(i);
 
     }
 
