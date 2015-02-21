@@ -13,7 +13,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/red_500"
-            android:text="@string/btn_zone" />
+            android:text="@string/btn_zone"
+            android:onClick="btnZona" />
         <com.gc.materialdesign.views.ButtonRectangle
             android:id="@+id/btn_twitter"
             android:layout_width="wrap_content"
@@ -23,12 +24,28 @@
             android:onClick="btnSelecTwitter" />
     </LinearLayout>
 
-    <com.gc.materialdesign.views.ButtonRectangle
-        android:id="@+id/btn_tlf"
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="@color/lime_500"
-        android:text="@string/btn_phone"
-        android:onClick="btnSelecTelf" />
+        android:onClick="btnZona">
+
+        <com.gc.materialdesign.views.ButtonRectangle
+            android:id="@+id/btn_tlf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/lime_500"
+            android:text="@string/btn_phone"
+            android:onClick="btnSelecTelf" />
+
+        <com.gc.materialdesign.views.ButtonRectangle
+            android:id="@+id/btn_bloquear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/orange_500"
+            android:text="@string/bloquear"
+            android:onClick="btnBloquear" />
+
+    </LinearLayout>
 
 </LinearLayout>

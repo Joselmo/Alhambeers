@@ -17,4 +17,6 @@
     <string name="info_paso2">Paso 2</string>
     <string name="info_paso3">Paso 3</string>
     <string name="info_paso4">Paso 4</string>
+    <string name="bloquear">Bloquear</string>
+    <string name="desbloquear">Desbloquear</string>
 </resources>
