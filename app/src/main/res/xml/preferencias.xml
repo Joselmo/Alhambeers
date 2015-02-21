@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:key="tlf"
+        android:title="Telefono"/>
+    <EditTextPreference
+        android:key="twitter"
+        android:title="Twitter"/>
+    <EditTextPreference
+        android:key="metros"
+        android:title="Metros"/>
+    <EditTextPreference
+    android:key="latitud"
+    android:title="Latitud"/>
+    <EditTextPreference
+        android:key="longitud"
+        android:title="longitud"/>
+
+    <CheckBoxPreference android:title="cbTelf"
+        android:key="cbTelf"
+        android:defaultValue="false"/>
+
+    <CheckBoxPreference android:title="cbTwit"
+        android:key="cbTwit"
+        android:defaultValue="false"/>
+
+    <CheckBoxPreference android:title="cbZona"
+        android:key="cbZona"
+        android:defaultValue="false"/>
+</PreferenceScreen>
