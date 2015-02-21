@@ -68,3 +68,9 @@ Potenciaremos, en todo momento, la experiencia de usuario (UX) y una interfaz (U
 - Acelerómetro para detectar caídas
 - Sensor para detectar la saturación en la sangre
 - Monitorización remota mediante aplicación web
+
+
+##Resources
+MaterialDesignLibrary by navasmdc
+Material-design-icons by Google
+
