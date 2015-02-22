@@ -15,6 +15,10 @@
     <EditTextPreference
         android:key="longitud"
         android:title="longitud"/>
+    <EditTextPreference
+        android:key="bloqueo"
+        android:defaultValue="@string/bloquear"
+        android:title="bloqueo"/>
 
     <CheckBoxPreference android:title="cbTelf"
         android:key="cbTelf"

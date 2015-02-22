@@ -24,9 +24,11 @@ public class ConfigActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_config);
 
+
+      //TODO: check if/else
       if(getSaveData()){
         ButtonRectangle bloquear = (ButtonRectangle) findViewById(R.id.btn_bloquear);
-        if (bloquear.getText().equals(getResources().getString(R.string.bloquear))){
+        if (bloquear.getText().equals(getSaveDataB())){
           setUnblocked();
         }else{
           setBlocked();
@@ -97,6 +99,11 @@ public class ConfigActivity extends Activity {
     ButtonRectangle bloquear = (ButtonRectangle) findViewById(R.id.btn_bloquear);
     SharedPreferences prefs = getSharedPreferences("preferencias", Context.MODE_PRIVATE);
     SharedPreferences.Editor editor = prefs.edit();
+    if(value){
+      editor.putString("bloqueo", "Desbloquear");
+    }else{
+      editor.putString("bloqueo", "Bloquear");
+    }
     editor.putBoolean("cbBloqueo", value);
     editor.commit();
     Toast.makeText(this,getResources().getString(R.string.save),Toast.LENGTH_SHORT).show();
@@ -105,6 +112,11 @@ public class ConfigActivity extends Activity {
   private boolean getSaveData(){
     SharedPreferences prefs = getSharedPreferences("preferencias", Context.MODE_PRIVATE);
     return prefs.getBoolean("cbBloqueo",false);
+  }
+
+  private String getSaveDataB(){
+    SharedPreferences prefs = getSharedPreferences("preferencias", Context.MODE_PRIVATE);
+    return prefs.getString("bloqueo","Bloquear");
   }
 
 }
