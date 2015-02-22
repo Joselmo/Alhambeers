@@ -52,7 +52,8 @@ public class InfoZona extends FragmentActivity  {
 
     public void btnSiguiente (View v){
         Toast.makeText(this,"Siguiente",Toast.LENGTH_SHORT).show();
-        Intent i = new Intent(getApplicationContext(),ZonaActivity.class);
+        Intent i = new Intent(getApplicationContext() ,ZonaActivity.class);
+        i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(i);
 
     }
