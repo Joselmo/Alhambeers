@@ -17,19 +17,24 @@ import com.gc.materialdesign.views.ButtonRectangle;
  * Created by Elena on 21/02/2015.
  */
 public class ConfigActivity extends Activity {
-  private static final String LOGTAG = "LogsAndroid";
 
+  private static final String LOGTAG = "LogsAndroid";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_config);
 
       if(getSaveData()){
-        setBlocked();
+        ButtonRectangle bloquear = (ButtonRectangle) findViewById(R.id.btn_bloquear);
+        if (bloquear.getText().equals(getResources().getString(R.string.bloquear))){
+          setUnblocked();
+        }else{
+          setBlocked();
+        }
       }else{
         setUnblocked();
       }
-      ButtonRectangle bloquear = (ButtonRectangle) findViewById(R.id.btn_bloquear);
+
     }
 
     public void btnSelecTelf (View v){
@@ -70,7 +75,6 @@ public class ConfigActivity extends Activity {
     }
   }
 
-
   private void setBlocked(){
     ButtonRectangle btn_zona = (ButtonRectangle) findViewById(R.id.btn_zona);
     ButtonRectangle btn_twitter = (ButtonRectangle) findViewById(R.id.btn_twitter);
@@ -92,11 +96,9 @@ public class ConfigActivity extends Activity {
   private void setSaveData(boolean value){
     ButtonRectangle bloquear = (ButtonRectangle) findViewById(R.id.btn_bloquear);
     SharedPreferences prefs = getSharedPreferences("preferencias", Context.MODE_PRIVATE);
-
     SharedPreferences.Editor editor = prefs.edit();
     editor.putBoolean("cbBloqueo", value);
     editor.commit();
-
     Toast.makeText(this,getResources().getString(R.string.save),Toast.LENGTH_SHORT).show();
   }
 
