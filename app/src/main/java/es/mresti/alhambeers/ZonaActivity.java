@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
@@ -50,9 +51,9 @@ public class ZonaActivity extends Activity {
             // Recogemos los datos del servidor y se lo pasamos a la capa de java
 
             try {
-                Thread.sleep(2000);
+                Thread.sleep(4000);
             } catch (InterruptedException e) {
-                e.printStackTrace();
+                Log.e("...........ERROR:"," Recibiendo posicion");
             }
 
             return "";
