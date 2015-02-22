@@ -75,8 +75,8 @@ MaterialDesignLibrary by navasmdc
 Material-design-icons by Google
 
 ##Funcionalidades
-- Localización del dispositivo via web
+- Localización del dispositivo vía web
 - Elección de una zona segura con alerta si se sale de ella
-- Boton del pánico
-- Envio de la localización a un servidor remoto
+- Botón del pánico
+- Envío de la localización a un servidor remoto
 - Bloqueo de la configuración mediante QR
