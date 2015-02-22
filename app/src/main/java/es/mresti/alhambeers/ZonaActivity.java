@@ -17,7 +17,7 @@ public class ZonaActivity extends Activity {
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_main);
+    setContentView(R.layout.activity_zona);
   }
 
   public void btnBack (View v){
@@ -26,9 +26,9 @@ public class ZonaActivity extends Activity {
   }
 
     public void btnGetPosition (View v){
-        Async_Consulta sal = new Async_Consulta();
-        sal.execute();
-
+       // Async_Consulta sal = new Async_Consulta();
+       // sal.execute();
+        Toast.makeText(this,"Posicion tomada",Toast.LENGTH_SHORT).show();
         Intent i = new Intent(this,DistActivity.class);
         startActivity(i);
     }

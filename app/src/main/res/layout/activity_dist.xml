@@ -14,15 +14,21 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:paddingLeft="20dp"
+            android:textSize="20dp"
             android:text="@string/text_dist"
-            android:id="@+id/textViewDist"/>
+            android:id="@+id/textViewDist"
+            android:layout_weight="0.5"
+            android:textAlignment="center" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
             android:text="@string/text_meters"
             android:id="@+id/textViewMeters"
-            android:layout_weight="0.13"/>
+            android:layout_weight="0.5"/>
 
     </LinearLayout>
 
@@ -36,25 +42,25 @@
             android:id="@+id/btn_low"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/yellow_500"
+            android:background="@color/black"
             android:text="@string/btn_low"
-            android:onClick="btnSelecTelf" />
+            android:onClick="btnMenos" />
 
         <com.gc.materialdesign.views.ButtonRectangle
             android:id="@+id/btn_ok"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/lime_500"
+            android:background="@color/green_900"
             android:text="@string/btn_ok"
-            android:onClick="btnBack" />
+            android:onClick="btnOk" />
 
         <com.gc.materialdesign.views.ButtonRectangle
             android:id="@+id/btn_high"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/yellow_500"
+            android:background="@color/black"
             android:text="@string/btn_high"
-            android:onClick="btnBloquear" />
+            android:onClick="btnMas" />
 
     </LinearLayout>
 

@@ -15,30 +15,32 @@ public class DistActivity extends Activity {
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_main);
-    TextView texto = (TextView) findViewById(R.id.textViewDist);
-    texto.setText("0");
+    setContentView(R.layout.activity_dist);
+     ButtonRectangle btn = (ButtonRectangle) findViewById(R.id.btn_high);
+     btn.getTextView().setTextSize(45);
+     btn = (ButtonRectangle) findViewById(R.id.btn_low);
+     btn.getTextView().setTextSize(45);
   }
 
   public void btnMenos(View v){
-    ButtonRectangle btn = (ButtonRectangle) findViewById(R.id.btn_low);
+      TextView distancia = (TextView) findViewById(R.id.textViewDist);
 
-    int value = Integer.getInteger(btn.getText());
+      int value = Integer.valueOf(distancia.getText().toString());
 
     if(value>10) {
       value -= 10;
-      btn.setText(String.valueOf(value));
+        distancia.setText(String.valueOf(value));
     }
   }
 
   public void btnMas(View v){
-    ButtonRectangle btn = (ButtonRectangle) findViewById(R.id.btn_high);
+      TextView distancia = (TextView) findViewById(R.id.textViewDist);
 
-    int value = Integer.getInteger(btn.getText());
+    int value = Integer.valueOf(distancia.getText().toString());
 
     if(value<100) {
       value += 10;
-      btn.setText(String.valueOf(value));
+        distancia.setText(String.valueOf(value));
     }
   }
   public void btnOk (View v){
