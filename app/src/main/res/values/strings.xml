@@ -26,4 +26,7 @@
     <string name="bloquear">Bloquear</string>
     <string name="desbloquear">Desbloquear</string>
     <string name="save">Guardado</string>
+
+    <string name="send_SOS">"SOS Enviado"</string>
+    <string name="send_twitter">"Tweet Enviado"</string>
 </resources>

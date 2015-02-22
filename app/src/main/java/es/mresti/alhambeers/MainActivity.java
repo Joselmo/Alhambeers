@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.net.Uri;
+import android.widget.Toast;
 
 import com.gc.materialdesign.views.ButtonRectangle;
 
@@ -24,7 +25,7 @@ public class MainActivity extends Activity {
     ButtonRectangle btn_tlf = (ButtonRectangle) findViewById(R.id.btn_telefono);
     ButtonRectangle btn_twi = (ButtonRectangle) findViewById(R.id.btn_twitter);
     ButtonRectangle btn_sos = (ButtonRectangle) findViewById(R.id.btn_sos);
-    if(getSaveDataBtnPhone()){
+    /*if(getSaveDataBtnPhone()){
       btn_tlf.setEnabled(true);
     }else{
       btn_tlf.setEnabled(false);
@@ -38,7 +39,7 @@ public class MainActivity extends Activity {
       btn_sos.setEnabled(true);
     }else{
       btn_sos.setEnabled(false);
-    }
+    }*/
   }
 
     /** Botones de inicio
@@ -51,13 +52,11 @@ public class MainActivity extends Activity {
     }
 
     public void btnSos (View v){
-        Intent i = new Intent(this,ConfigActivity.class);
-        startActivity(i);
+        Toast.makeText(this,R.string.send_SOS,Toast.LENGTH_LONG).show();
     }
 
     public void btnTwitter (View v){
-        Intent i = new Intent(this,ConfigActivity.class);
-        startActivity(i);
+        Toast.makeText(this,R.string.send_twitter,Toast.LENGTH_LONG).show();
     }
 
     public void btnTelefono (View v){
