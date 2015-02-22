@@ -25,6 +25,18 @@ public class ConfigActivity extends Activity {
         setContentView(R.layout.activity_config);
 
 
+        //Tamaño de letra de los botones
+
+        ButtonRectangle btn_bloquear = (ButtonRectangle) findViewById(R.id.btn_bloquear);
+        ButtonRectangle btn_telf = (ButtonRectangle) findViewById(R.id.btn_tlf);
+        ButtonRectangle btn_zona = (ButtonRectangle) findViewById(R.id.btn_zona);
+        ButtonRectangle btn_twitter = (ButtonRectangle) findViewById(R.id.btn_twitter);
+
+        btn_bloquear.getTextView().setTextSize(20);
+        btn_telf.getTextView().setTextSize(20);
+        btn_zona.getTextView().setTextSize(20);
+        btn_twitter.getTextView().setTextSize(20);
+
       //TODO: check if/else
       if(getSaveData()){
         ButtonRectangle bloquear = (ButtonRectangle) findViewById(R.id.btn_bloquear);

@@ -25,6 +25,7 @@ public class MainActivity extends Activity {
     ButtonRectangle btn_tlf = (ButtonRectangle) findViewById(R.id.btn_telefono);
     ButtonRectangle btn_twi = (ButtonRectangle) findViewById(R.id.btn_twitter);
     ButtonRectangle btn_sos = (ButtonRectangle) findViewById(R.id.btn_sos);
+    ButtonRectangle btn_config = (ButtonRectangle) findViewById(R.id.btn_config);
     /*if(getSaveDataBtnPhone()){
       btn_tlf.setEnabled(true);
     }else{
@@ -40,6 +41,12 @@ public class MainActivity extends Activity {
     }else{
       btn_sos.setEnabled(false);
     }*/
+
+      btn_tlf.getTextView().setTextSize(20);
+      btn_sos.getTextView().setTextSize(20);
+      btn_twi.getTextView().setTextSize(20);
+      btn_config.getTextView().setTextSize(20);
+      //btn_tlf.setBackground(getResources().getDrawable(R.drawable.ic_local_phone));
   }
 
     /** Botones de inicio
