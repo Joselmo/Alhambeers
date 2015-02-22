@@ -74,3 +74,9 @@ Potenciaremos, en todo momento, la experiencia de usuario (UX) y una interfaz (U
 MaterialDesignLibrary by navasmdc
 Material-design-icons by Google
 
+##Funcionalidades
+-Localización del dispositivo via web
+-Elección de una zona segura con alerta si se sale de ella
+-Boton del pánico
+-Envio de la localización a un servidor remoto
+-Bloqueo de la configuración mediante QR
