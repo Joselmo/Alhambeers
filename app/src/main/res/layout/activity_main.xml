@@ -20,7 +20,7 @@
             android:id="@+id/btn_sos"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:background="@color/red_500"
+            android:background="@color/red_900"
             android:text="@string/btn_sos"
             android:onClick="btnSos"
             android:layout_weight="0.50" />
@@ -29,7 +29,7 @@
             android:id="@+id/btn_twitter"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:background="@color/blue_500"
+            android:background="@color/light_blue_700"
             android:text="@string/btn_twitter"
             android:onClick="btnTwitter"
             android:layout_weight="0.50" />
@@ -48,7 +48,7 @@
             android:id="@+id/btn_telefono"
             android:layout_width="0.50dp"
             android:layout_height="match_parent"
-            android:background="@color/lime_500"
+            android:background="@color/teal_900"
             android:text="@string/btn_phone"
             android:onClick="btnTelefono"
             android:layout_weight="0.5" />
@@ -57,7 +57,7 @@
             android:id="@+id/btn_config"
             android:layout_width="0.50dp"
             android:layout_height="match_parent"
-            android:background="@color/grey_500"
+            android:background="@color/grey_700"
             android:text="@string/btn_settings"
             android:onClick="btnConfig"
             android:layout_weight="0.5" />
